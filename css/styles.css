@@ -807,11 +807,11 @@ fill: var(--title-text-color);
 width: 11px;
 height: 11px;
 }
-.button-modal:hover {
-  background-color: var(--accent-color);
+.button-close:hover {
+fill: var(--accent-color);
 }
-.button-modal:focus {
-  background-color: var(--accent-color);
+.button-close:focus {
+  fill: var(--accent-color);
 }
 .is-hidden {
   opacity: 0;
