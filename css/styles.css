@@ -850,8 +850,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   position: relative;
   margin-bottom: 10px;
 }
+.form:nth-child(4) {
+  margin-bottom: 20px;
+}
 .form:focus {
   color: var(--accent-color);
+  
 }
 .name-modal {
   color:rgba(117, 117, 117, 1) ;
@@ -890,6 +894,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-coments:focus {
   border-color: var(--accent-color);
+  outline: transparent;
 }
 .modal-button {
   width: 200px;
@@ -916,6 +921,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-input:focus {
   border-color: var(--accent-color);
+  outline: transparent;
 }
 .modal-input:focus+.icon-modal {
   fill: var(--accent-color);
@@ -925,4 +931,33 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-input:hover+.icon-modal {
   fill: var(--accent-color);
+}
+.agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(0, 0, 0, 0.25);
+}
+.agreement::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--header-logo-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  
+}
+.blu-text {
+  color: var(--accent-color);
+text-decoration: underline;
+
+}
+.form-check:checked + .agreement::before {
+background-color:var(--accent-color);
+background-image: url(../img-home-work2/check.svg);
+background-position: center;
+background-size: contain;
+border: transparent;
 }
