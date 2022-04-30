@@ -432,7 +432,7 @@
 
                 <div class="form">
                 <label class="name-modal">Имя              
-              <input type="text"class="modal-input" name="user-name" required>
+              <input type="text"class="modal-input" name="user-name" required autofocus>
               <svg class="icon-modal" width="18px" height="18px">
                   <use href="./symbol-defs.svg#icon-person-black-18dp-1"></use>
               </svg>
@@ -441,14 +441,27 @@
                <div class="form">
                 <label class="name-modal">Телефон
                 <input type="tel" class="modal-input" name="user-tel" required>
+                <svg class="icon-modal" width="18px" height="18px">
+                    <use href="./symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                </svg>
                 </label>
             </div>
             <div class="form">
                 <label class="name-modal">Почта
                 <input type="email" class="modal-input" name="user-mail" required>
+                <svg class="icon-modal" width="18px" height="18px">
+                    <use href="./symbol-defs.svg#icon-email-black-18dp-1"></use>
+                </svg>
                 </label>
             </div>  
-               <button type="submit">Отправить</button>
+            <div class="form">
+
+               <label for="user-text" class="name-modal"> Комментарий</label>
+                <textarea class="modal-coments" placeholder="Введите текст" name="user-text" id="user-text"></textarea>
+                
+            </div>
+
+               <button type="submit" class="modal-button">Отправить</button>
 
             </form>
         </div>
