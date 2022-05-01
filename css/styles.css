@@ -724,7 +724,9 @@ a {
 .footer-nav-list .item:last-child{
   margin-bottom: 0px;
 }
-
+.footer-mail {
+  margin-left: 93px;
+}
 
 .footer-title {
    
@@ -904,6 +906,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   color: var(--footer-logo-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  padding-bottom: 10px;
+   padding-top: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-left: 124px;
+  margin-right: 124px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   transition-property:box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
@@ -938,8 +948,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
   justify-content: center;
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(0, 0, 0, 0.25);
- 
+  color: var(--title-text-color);
 }
 .agreement::before {
   content: "";
@@ -961,4 +970,24 @@ background-image: url(../img-home-work2/check.svg);
 background-position: center;
 background-size: contain;
 border: transparent;
+}
+.form-footer {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  color:var(--primery-bg-color)
+}
+.button-footer {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--footer-logo-color);
+  border: transparent;
+  border-radius: 4px;
+ margin-left: 12px;
+ cursor: pointer;
+ padding-bottom: 10px;
+
 }
